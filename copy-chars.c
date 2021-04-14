@@ -5,10 +5,10 @@
 */
 
 int main() {
-  long nc = 0;
+  double nc;
 
-  while (getchar() != EOF)
-    ++nc;
+  for (nc = 0; getchar() != EOF; ++nc)
+    ;
 
-  printf("%1d\n", nc);
+  printf("%.0f\n", nc);
 }
