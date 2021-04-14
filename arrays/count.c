@@ -6,12 +6,11 @@
 
 int main() {
   int c;
-  int i;
   int nwhite = 0;
   int nother = 0;
   int ndigit[10];
 
-  for (i = 0; i < 10; ++i)
+  for (int i = 0; i < 10; ++i)
     ndigit[i] = 0;
 
   while ((c = getchar()) != EOF)
@@ -24,7 +23,7 @@ int main() {
 
   printf("digits =");
 
-  for (i = 0; i < 10; ++i)
+  for (int i = 0; i < 10; ++i)
     printf(" [%d]=%d", i, ndigit[i]);
 
   printf(", white space = %d, other = %d\n", nwhite, nother);
