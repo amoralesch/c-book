@@ -34,7 +34,7 @@ int main() {
     if (counts[i] > max)
       max = counts[i];
 
-  printf("Word lenght frequency vertical histogram\n\n");
+  printf("Word length frequency vertical histogram\n\n");
 
   for (int i = 0; i < max; i++) {
     printf("%3d", max - i);

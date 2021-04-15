@@ -30,7 +30,7 @@ int main() {
       ++len;
   }
 
-  printf("Word lenght frequency histogram\n\n");
+  printf("Word length frequency histogram\n\n");
 
   for (int i = 0; i < MAX_LEN; i++) {
     printf("%4d", i + 1);
