@@ -28,7 +28,8 @@ void getFullLine(char line[], int max)
     int i = 0;
 
     for (int c = getchar(); c != EOF && c != '\n'; c = getchar())
-        line[i++] = c;
+        if (i < max - 1)
+            line[i++] = c;
 
     line[i] = '\0';
 }
